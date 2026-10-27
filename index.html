@@ -1,0 +1,2134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO metadata -->
+  <title>Spaghetti and Noodles Restaurant in Lokoja | Spagking Restaurant</title>
+  <meta name="description" content="Craving spaghetti or noodles in Lokoja? Visit Spagking Restaurant, also known as Spag King, at Old Poly Quarters Junction. Dine-in, takeaway and delivery available.">
+  <meta name="keywords" content="Spagking Restaurant, Spag King, spaghetti restaurant Lokoja, noodles Lokoja, food delivery Lokoja">
+  <meta name="author" content="Spagking Restaurant">
+  <meta name="theme-color" content="#171717">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph metadata -->
+  <meta property="og:title" content="Spagking Restaurant | The King of Spaghetti in Lokoja">
+  <meta property="og:description" content="Big flavour. Fast delivery. Your spaghetti and noodles spot in Lokoja.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_NG">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+       1. GLOBAL STYLES
+    ========================== */
+    :root {
+      --dark: #171717;
+      --dark-soft: #222222;
+      --dark-card: #292929;
+      --yellow: #ffdf00;
+      --red: #ff3b30;
+      --white: #ffffff;
+      --muted: #c5c5c5;
+      --black: #080808;
+      --radius: 18px;
+      --shadow: 0 14px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 85px;
+    }
+
+    body {
+      background: var(--dark);
+      color: var(--white);
+      font-family: "Poppins", sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    input,
+    textarea {
+      font: inherit;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .container {
+      width: min(1140px, 90%);
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .section-heading {
+      max-width: 720px;
+      margin: 0 auto 45px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: var(--yellow);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .section-heading h2 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(2.8rem, 6vw, 4.6rem);
+      line-height: 0.98;
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+    }
+
+    .section-heading h2 span {
+      color: var(--yellow);
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 2px solid transparent;
+      border-radius: 999px;
+      padding: 14px 23px;
+      font-size: 0.88rem;
+      font-weight: 800;
+      text-align: center;
+      transition: transform 0.25s ease, background 0.25s ease,
+        color 0.25s ease, border-color 0.25s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+    }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--black);
+    }
+
+    .btn-yellow:hover {
+      background: var(--white);
+    }
+
+    .btn-red {
+      background: var(--red);
+      color: var(--white);
+    }
+
+    .btn-red:hover {
+      background: #df2118;
+    }
+
+    .btn-outline {
+      border-color: rgba(255, 255, 255, 0.65);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--yellow);
+      color: var(--yellow);
+    }
+
+    /* =========================
+       2. STICKY NAVIGATION
+    ========================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(17, 17, 17, 0.96);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 45px;
+      height: 45px;
+      flex-shrink: 0;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      background: var(--yellow);
+      color: var(--black);
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.65rem;
+      transform: rotate(-5deg);
+    }
+
+    .brand-copy {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.15;
+    }
+
+    .brand-copy strong {
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-copy small {
+      color: var(--yellow);
+      font-size: 0.67rem;
+      letter-spacing: 1.3px;
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 23px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #ededed;
+      font-size: 0.8rem;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--yellow);
+    }
+
+    .nav-links .nav-order {
+      background: var(--yellow);
+      color: var(--black);
+      padding: 10px 17px;
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .nav-links .nav-order:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 45px;
+      height: 45px;
+      border: 1px solid #454545;
+      border-radius: 12px;
+      background: var(--dark-card);
+      color: var(--white);
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    /* =========================
+       3. HERO
+    ========================== */
+    .hero {
+      min-height: 650px;
+      display: flex;
+      align-items: center;
+      padding: 75px 0 105px;
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 80% 20%, rgba(255, 59, 48, 0.14), transparent 32%),
+        radial-gradient(circle at 10% 85%, rgba(255, 223, 0, 0.09), transparent 30%),
+        var(--dark);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 480px;
+      height: 480px;
+      border: 55px solid rgba(255, 223, 0, 0.055);
+      border-radius: 50%;
+      right: -180px;
+      bottom: -240px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      align-items: center;
+      gap: 55px;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--yellow);
+      font-size: 0.76rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero-kicker::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--red);
+    }
+
+    .hero h1 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: clamp(4rem, 7.4vw, 7.1rem);
+      line-height: 0.88;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      max-width: 650px;
+    }
+
+    .hero h1 span {
+      display: block;
+      color: var(--yellow);
+    }
+
+    .hero-description {
+      color: #dedede;
+      max-width: 490px;
+      margin: 25px 0;
+      font-size: 0.98rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .rating-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 30px;
+      padding: 11px 16px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: rgba(255, 255, 255, 0.045);
+    }
+
+    .rating-star {
+      color: var(--yellow);
+      font-size: 1.35rem;
+      letter-spacing: 2px;
+    }
+
+    .rating-copy strong {
+      display: block;
+      font-size: 0.92rem;
+    }
+
+    .rating-copy small {
+      color: var(--muted);
+      font-size: 0.73rem;
+    }
+
+    .hero-visual {
+      position: relative;
+      max-width: 540px;
+      width: 100%;
+      justify-self: end;
+    }
+
+    .hero-image-frame {
+      padding: 12px;
+      border: 2px solid var(--yellow);
+      border-radius: 46% 46% 24px 24px;
+      transform: rotate(2deg);
+      background: var(--dark-card);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-image-frame img {
+      width: 100%;
+      height: 470px;
+      object-fit: cover;
+      border-radius: 46% 46% 17px 17px;
+      transform: rotate(-2deg);
+    }
+
+    .hero-sticker {
+      position: absolute;
+      left: -28px;
+      bottom: 45px;
+      display: grid;
+      place-items: center;
+      width: 115px;
+      height: 115px;
+      border-radius: 50%;
+      background: var(--red);
+      color: var(--white);
+      text-align: center;
+      line-height: 1.05;
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.55rem;
+      transform: rotate(-12deg);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-sticker span {
+      display: block;
+      font-family: "Poppins", sans-serif;
+      font-size: 0.62rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+    }
+
+    .hero-bottom {
+      position: absolute;
+      bottom: 0;
+      left: -2%;
+      width: 104%;
+      height: 45px;
+      background: var(--yellow);
+      transform: rotate(-1.5deg) translateY(22px);
+    }
+
+    /* =========================
+       4. WHY CHOOSE US
+    ========================== */
+    .why-section {
+      background: var(--yellow);
+      color: var(--black);
+      padding-top: 105px;
+    }
+
+    .why-section .eyebrow {
+      color: var(--red);
+    }
+
+    .why-section .section-heading h2 span {
+      color: var(--red);
+    }
+
+    .why-section .section-heading p {
+      color: #373737;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 17px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      padding: 27px 22px;
+      border-radius: var(--radius);
+      min-height: 220px;
+      border: 2px solid transparent;
+      transition: transform 0.25s ease, border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px) rotate(-1deg);
+      border-color: var(--red);
+      box-shadow: 0 15px 28px rgba(0, 0, 0, 0.12);
+    }
+
+    .feature-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      background: var(--dark);
+      color: var(--yellow);
+      font-size: 1.55rem;
+      margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.02rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      color: #555;
+      font-size: 0.82rem;
+      line-height: 1.7;
+    }
+
+    /* =========================
+       5. MENU
+    ========================== */
+    .menu-section {
+      background: var(--dark);
+      padding-top: 105px;
+    }
+
+    .menu-categories {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 35px;
+    }
+
+    .category-btn {
+      border: 1px solid #555;
+      background: transparent;
+      color: var(--white);
+      padding: 11px 19px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .category-btn:hover,
+    .category-btn.active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: var(--black);
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .menu-card {
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: var(--dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-7px);
+      border-color: var(--yellow);
+    }
+
+    .menu-card[hidden] {
+      display: none;
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+    }
+
+    .menu-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .menu-card-copy {
+      padding: 22px;
+    }
+
+    .menu-card-copy h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 1.8rem;
+      letter-spacing: 0.4px;
+      line-height: 1.1;
+      margin-bottom: 9px;
+    }
+
+    .menu-card-copy p {
+      color: var(--muted);
+      font-size: 0.83rem;
+      margin-bottom: 17px;
+    }
+
+    .menu-order-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--yellow);
+      font-size: 0.78rem;
+      font-weight: 800;
+    }
+
+    .menu-order-link:hover {
+      color: var(--white);
+    }
+
+    .menu-note {
+      margin: 35px auto 0;
+      max-width: 680px;
+      text-align: center;
+      padding: 22px;
+      border: 1px dashed rgba(255, 223, 0, 0.6);
+      border-radius: var(--radius);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .menu-note strong {
+      color: var(--yellow);
+    }
+
+    /* =========================
+       6. HOW TO ORDER
+    ========================== */
+    .steps-section {
+      background: var(--red);
+      color: var(--white);
+      clip-path: polygon(0 3%, 100% 0, 100% 97%, 0 100%);
+      padding: 115px 0;
+    }
+
+    .steps-section .eyebrow {
+      color: var(--yellow);
+    }
+
+    .steps-section .section-heading h2 span {
+      color: var(--yellow);
+    }
+
+    .steps-section .section-heading p {
+      color: #ffe6e4;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .step-card {
+      padding: 30px;
+      border-radius: var(--radius);
+      background: rgba(0, 0, 0, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .step-card:hover {
+      transform: translateY(-7px);
+      background: rgba(0, 0, 0, 0.28);
+    }
+
+    .step-number {
+      font-family: "Bebas Neue", sans-serif;
+      color: var(--yellow);
+      font-size: 3.8rem;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .step-card h3 {
+      font-size: 1.12rem;
+      margin-bottom: 10px;
+    }
+
+    .step-card p {
+      color: #ffe6e4;
+      font-size: 0.87rem;
+    }
+
+    /* =========================
+       7. FOOD GALLERY
+    ========================== */
+    .gallery-section {
+      background: #202020;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 230px;
+      gap: 15px;
+    }
+
+    .gallery-item {
+      overflow: hidden;
+      position: relative;
+      border-radius: 17px;
+      background: var(--dark-card);
+    }
+
+    .gallery-item:first-child {
+      grid-row: span 2;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease, filter 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+      filter: brightness(0.8);
+    }
+
+    .gallery-label {
+      position: absolute;
+      bottom: 13px;
+      left: 13px;
+      background: var(--yellow);
+      color: var(--black);
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    /* =========================
+       8. CUSTOMER REVIEWS
+    ========================== */
+    .reviews-section {
+      background: var(--dark);
+    }
+
+    .review-summary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      margin: -12px 0 38px;
+    }
+
+    .review-summary strong {
+      font-size: 2rem;
+      line-height: 1;
+    }
+
+    .review-summary .stars {
+      color: var(--yellow);
+      letter-spacing: 3px;
+      font-size: 1.3rem;
+    }
+
+    .review-summary small {
+      display: block;
+      color: var(--muted);
+      font-size: 0.75rem;
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      max-width: 950px;
+      margin: 0 auto;
+    }
+
+    .review-card {
+      position: relative;
+      padding: 30px;
+      border-radius: var(--radius);
+      background: var(--dark-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .review-card::before {
+      content: "“";
+      position: absolute;
+      top: 8px;
+      right: 23px;
+      font-family: Georgia, serif;
+      color: var(--red);
+      font-size: 5rem;
+      line-height: 1;
+      opacity: 0.8;
+    }
+
+    .review-stars {
+      color: var(--yellow);
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .review-card blockquote {
+      color: #f1f1f1;
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .review-avatar {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--yellow);
+      color: var(--black);
+      font-weight: 800;
+    }
+
+    .review-author strong {
+      display: block;
+      font-size: 0.87rem;
+    }
+
+    .review-author small {
+      color: var(--muted);
+      font-size: 0.72rem;
+    }
+
+    /* =========================
+       9. CONTACT AND ORDER FORM
+    ========================== */
+    .contact-section {
+      background: var(--yellow);
+      color: var(--black);
+      padding: 100px 0;
+    }
+
+    .contact-section .eyebrow {
+      color: var(--red);
+    }
+
+    .contact-section .section-heading h2 span {
+      color: var(--red);
+    }
+
+    .contact-section .section-heading p {
+      color: #393939;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      align-items: start;
+      gap: 30px;
+    }
+
+    .contact-info {
+      background: var(--dark);
+      color: var(--white);
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-info h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 2.2rem;
+      line-height: 1.05;
+      margin-bottom: 25px;
+    }
+
+    .contact-info h3 span {
+      color: var(--yellow);
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .contact-detail:last-of-type {
+      border-bottom: 0;
+    }
+
+    .contact-detail-icon {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: var(--yellow);
+      color: var(--black);
+      font-size: 1.15rem;
+    }
+
+    .contact-detail strong {
+      display: block;
+      font-size: 0.8rem;
+      margin-bottom: 4px;
+    }
+
+    .contact-detail p,
+    .contact-detail a {
+      color: #dedede;
+      font-size: 0.82rem;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-detail a:hover {
+      color: var(--yellow);
+    }
+
+    .contact-social {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .contact-social .btn {
+      padding: 11px 15px;
+      font-size: 0.78rem;
+    }
+
+    .order-form {
+      background: var(--white);
+      padding: 32px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .order-form h3 {
+      font-family: "Bebas Neue", sans-serif;
+      font-size: 2.4rem;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+
+    .order-form > p {
+      color: #666;
+      font-size: 0.82rem;
+      margin-bottom: 25px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .form-group {
+      margin-bottom: 17px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      border: 1px solid #dedede;
+      background: #f7f7f7;
+      color: var(--black);
+      border-radius: 12px;
+      padding: 13px 14px;
+      font-size: 0.86rem;
+      outline: none;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: #d0b600;
+      box-shadow: 0 0 0 3px rgba(255, 223, 0, 0.25);
+    }
+
+    .form-group textarea {
+      min-height: 115px;
+      resize: vertical;
+    }
+
+    .order-form .btn {
+      width: 100%;
+      border: 0;
+    }
+
+    .form-note {
+      margin-top: 13px;
+      color: #666;
+      font-size: 0.72rem;
+      text-align: center;
+    }
+
+    .map-wrap {
+      margin-top: 35px;
+      background: var(--dark);
+      padding: 12px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .map-wrap iframe {
+      display: block;
+      width: 100%;
+      height: 340px;
+      border: 0;
+      border-radius: 13px;
+    }
+
+    /* =========================
+       10. FOOTER AND FLOATING BUTTON
+    ========================== */
+    .footer {
+      background: var(--black);
+      padding: 40px 0 25px;
+    }
+
+    .footer-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+      padding-bottom: 27px;
+      border-bottom: 1px solid #333;
+    }
+
+    .footer-brand p {
+      color: var(--muted);
+      font-size: 0.78rem;
+      margin-top: 12px;
+      max-width: 360px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      font-size: 0.8rem;
+      color: #ddd;
+    }
+
+    .footer-links a:hover {
+      color: var(--yellow);
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      padding-top: 20px;
+      color: #999;
+      font-size: 0.72rem;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      z-index: 999;
+      right: 20px;
+      bottom: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 57px;
+      padding: 0 19px;
+      border-radius: 999px;
+      background: #25d366;
+      color: #061b0d;
+      font-size: 0.84rem;
+      font-weight: 800;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+      transition: transform 0.25s ease, background 0.25s ease;
+    }
+
+    .floating-whatsapp:hover {
+      transform: translateY(-5px);
+      background: #48ed82;
+    }
+
+    .floating-whatsapp span {
+      font-size: 1.35rem;
+    }
+
+    /* =========================
+       11. RESPONSIVE STYLES
+    ========================== */
+    @media (max-width: 980px) {
+      .nav-links {
+        gap: 14px;
+      }
+
+      .nav-links a {
+        font-size: 0.74rem;
+      }
+
+      .hero-grid {
+        gap: 30px;
+      }
+
+      .hero h1 {
+        font-size: clamp(4rem, 8vw, 6rem);
+      }
+
+      .hero-image-frame img {
+        height: 410px;
+      }
+
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr 1.2fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .section {
+        padding: 70px 0;
+      }
+
+      .nav-inner {
+        min-height: 70px;
+      }
+
+      .menu-toggle {
+        display: grid;
+        place-items: center;
+        flex-shrink: 0;
+      }
+
+      .nav-links {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        max-height: calc(100dvh - 70px);
+        overflow-y: auto;
+        padding: 20px 5% 28px;
+        background: #111;
+        border-bottom: 1px solid #333;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid #303030;
+      }
+
+      .nav-links li:last-child {
+        border-bottom: 0;
+        padding-top: 15px;
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 13px 4px;
+        font-size: 0.92rem;
+      }
+
+      .nav-links .nav-order {
+        text-align: center;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 65px 0 90px;
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .hero h1 {
+        font-size: clamp(4.3rem, 16vw, 6.5rem);
+      }
+
+      .hero-description {
+        font-size: 0.9rem;
+      }
+
+      .hero-visual {
+        width: min(100%, 470px);
+        justify-self: center;
+        margin: 0 auto;
+      }
+
+      .hero-image-frame img {
+        height: min(110vw, 430px);
+      }
+
+      .hero-sticker {
+        left: -7px;
+        bottom: 28px;
+        width: 95px;
+        height: 95px;
+        font-size: 1.3rem;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .step-card {
+        padding: 25px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 190px;
+      }
+
+      .gallery-item:first-child {
+        grid-row: auto;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-main {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .footer-links {
+        gap: 15px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: 91%;
+      }
+
+      .section-heading {
+        margin-bottom: 32px;
+      }
+
+      .section-heading h2 {
+        font-size: 3.2rem;
+      }
+
+      .hero h1 {
+        font-size: clamp(3.7rem, 16vw, 5rem);
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .rating-badge {
+        margin-top: 22px;
+      }
+
+      .features-grid,
+      .menu-grid,
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-card {
+        min-height: auto;
+      }
+
+      .menu-card img {
+        height: 230px;
+      }
+
+      .gallery-grid {
+        grid-auto-rows: 150px;
+        gap: 10px;
+      }
+
+      .gallery-label {
+        left: 8px;
+        bottom: 8px;
+        font-size: 0.64rem;
+        padding: 6px 9px;
+      }
+
+      .review-card {
+        padding: 25px;
+      }
+
+      .contact-info,
+      .order-form {
+        padding: 23px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+
+      .map-wrap iframe {
+        height: 280px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+      }
+
+      .floating-whatsapp {
+        right: 12px;
+        bottom: 12px;
+        min-height: 52px;
+        padding: 0 16px;
+      }
+    }
+
+    /* Respect reduced-motion preferences */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Spagking Restaurant home">
+        <span class="brand-mark">SK</span>
+        <span class="brand-copy">
+          <strong>SPAGKING</strong>
+          <small>Restaurant · Lokoja</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navLinks"
+        aria-expanded="false">
+        ☰
+      </button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#menu">Our Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact" class="nav-order">Order Now ↗</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-kicker">Lokoja's Spaghetti Spot</div>
+
+          <h1>
+            The King of
+            <span>Spaghetti</span>
+            in Lokoja.
+          </h1>
+
+          <p class="hero-description">
+            Big cravings deserve big flavour. Whether you're in the mood for
+            spaghetti or noodles, Spagking Restaurant is your spot for a
+            satisfying food fix. Dine in, take away or get delivery.
+          </p>
+
+          <div class="hero-actions">
+            <a
+              class="btn btn-yellow"
+              href="https://wa.me/2349027551946"
+              target="_blank"
+              rel="noopener noreferrer">
+              Order on WhatsApp <span aria-hidden="true">↗</span>
+            </a>
+
+            <a class="btn btn-outline" href="tel:09027551946">
+              ☎ Call Now
+            </a>
+          </div>
+
+          <div class="rating-badge" aria-label="Rated 4.5 out of 5 from 70 Google reviews">
+            <span class="rating-star" aria-hidden="true">★★★★★</span>
+            <span class="rating-copy">
+              <strong>4.5/5 Google Rating</strong>
+              <small>Based on 70 reviews</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1100&q=85"
+              alt="A delicious plate of pasta with fresh herbs and sauce"
+              fetchpriority="high">
+          </div>
+
+          <div class="hero-sticker">
+            BIG
+            <br>FLAVOUR
+            <span>SPAG KING</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom" aria-hidden="true"></div>
+    </section>
+
+    <!-- =========================
+         WHY CHOOSE US
+    ========================== -->
+    <section class="section why-section" id="why-us">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What's the difference?</span>
+          <h2>Good Food. <span>Good Mood.</span></h2>
+          <p>
+            When the craving hits, you want food that hits right. Here's what
+            makes Spagking a favourite stop for spaghetti and noodles in Lokoja.
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">⚡</div>
+            <h3>Fast Delivery</h3>
+            <p>
+              Customers praise how quickly their orders arrive. Message us
+              to arrange your delivery.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🍝</div>
+            <h3>Fresh & Tasty</h3>
+            <p>
+              Looking for a satisfying spaghetti or noodle fix? Come through
+              and enjoy your next food craving.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">₦</div>
+            <h3>Budget Friendly</h3>
+            <p>
+              The listed price range is about ₦1 to ₦10,000 per person.
+              Contact us for today's menu and prices.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon" aria-hidden="true">🥡</div>
+            <h3>Your Way to Eat</h3>
+            <p>
+              Choose dine-in, takeaway or delivery. Enjoy your meal the way
+              that works best for you.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         OUR MENU
+         Items below are suggestions, not a confirmed menu.
+         Ask the restaurant about availability and prices.
+    ========================== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Follow your cravings</span>
+          <h2>Good Food. <span>No Long Talk.</span></h2>
+          <p>
+            From saucy spaghetti to satisfying noodles, explore some meal
+            ideas and message us to ask what's available today.
+          </p>
+        </div>
+
+        <div class="menu-categories" role="group" aria-label="Filter menu suggestions">
+          <button class="category-btn active" type="button" data-category="all" aria-pressed="true">All</button>
+          <button class="category-btn" type="button" data-category="spaghetti" aria-pressed="false">Spaghetti</button>
+          <button class="category-btn" type="button" data-category="noodles" aria-pressed="false">Noodles</button>
+          <button class="category-btn" type="button" data-category="extras" aria-pressed="false">Extras & Sides</button>
+          <button class="category-btn" type="button" data-category="drinks" aria-pressed="false">Drinks</button>
+        </div>
+
+        <div class="menu-grid" id="menuGrid">
+          <article class="menu-card" data-category="spaghetti">
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=800&q=80"
+              alt="A plate of spaghetti with rich tomato sauce"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Classic Spaghetti</h3>
+              <p>A comforting spaghetti meal with rich sauce and delicious-looking flavour.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20is%20spaghetti%20available%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="spaghetti">
+            <img
+              src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?auto=format&fit=crop&w=800&q=80"
+              alt="A hearty pasta dish served with sauce and herbs"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Jollof-Style Spaghetti</h3>
+              <p>A colourful, sauce-coated spaghetti idea for anyone craving bold flavour.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20do%20you%20have%20jollof-style%20spaghetti%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="noodles">
+            <img
+              src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=800&q=80"
+              alt="A bowl of noodles prepared with vegetables and toppings"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Stir-Fry Noodles</h3>
+              <p>Noodles with colourful vegetables for a tasty, satisfying meal idea.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20are%20stir-fry%20noodles%20available%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="noodles">
+            <img
+              src="https://images.unsplash.com/photo-1569058242253-92a9c755a0ec?auto=format&fit=crop&w=800&q=80"
+              alt="A bowl of noodles served hot with fresh garnishes"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Noodles & Egg</h3>
+              <p>A classic noodle-meal idea with egg for a filling food break.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20are%20noodles%20with%20egg%20available%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="extras">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80"
+              alt="A plate of grilled chicken pieces ready to serve"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Chicken Extras</h3>
+              <p>Thinking of adding chicken to your meal? Ask us about available extras.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20what%20chicken%20extras%20are%20available%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="extras">
+            <img
+              src="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=800&q=80"
+              alt="Golden fried plantain pieces served as a side dish"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Plantain & Sides</h3>
+              <p>Want a little extra on the side? Ask about plantain and other available sides.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20which%20sides%20are%20available%20today%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks">
+            <img
+              src="https://images.unsplash.com/photo-1513558161293-cdaf765edfd7?auto=format&fit=crop&w=800&q=80"
+              alt="Refreshing cold drinks served over ice"
+              loading="lazy">
+            <div class="menu-card-copy">
+              <h3>Cold Drinks</h3>
+              <p>Ask us which drinks are available to go with your meal.</p>
+              <a class="menu-order-link" href="https://wa.me/2349027551946?text=Hello%20Spagking%2C%20which%20drinks%20do%20you%20have%20available%3F" target="_blank" rel="noopener noreferrer">ASK ABOUT AVAILABILITY ↗</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="menu-note">
+          <strong>Hungry already?</strong>
+          Message us on WhatsApp for today's menu and prices.
+          <br>
+          <a class="btn btn-yellow" style="margin-top: 15px;" href="https://wa.me/2349027551946" target="_blank" rel="noopener noreferrer">
+            Get Today's Menu ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         HOW TO ORDER
+    ========================== -->
+    <section class="section steps-section" id="how-to-order">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Simple as one, two, three</span>
+          <h2>Craving It? <span>Let's Go.</span></h2>
+          <p>
+            Getting your food started is easy. Send us your request and we'll
+            help you with the next steps.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">01</div>
+            <h3>Choose Your Meal</h3>
+            <p>
+              Decide what you're craving. Ask us what's available and confirm
+              today's prices.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">02</div>
+            <h3>Send a WhatsApp Message</h3>
+            <p>
+              Tell us what you'd like, your contact number and whether you
+              need delivery or takeaway.
+            </p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-number">03</div>
+            <h3>Enjoy Your Food</h3>
+            <p>
+              Arrange delivery to your address or visit us at Old Poly
+              Quarters Junction, Lokoja.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         FOOD GALLERY
+    ========================== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Food inspiration</span>
+          <h2>Feast Your <span>Eyes.</span></h2>
+          <p>
+            A little food inspiration for your next craving. Message Spagking
+            to confirm what is available today.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=900&q=80"
+              alt="Pasta served on a plate with herbs and sauce"
+              loading="lazy">
+            <figcaption class="gallery-label">Pasta Cravings</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03246963d51a?auto=format&fit=crop&w=700&q=80"
+              alt="Spaghetti with tomato sauce served ready to eat"
+              loading="lazy">
+            <figcaption class="gallery-label">Saucy Spaghetti</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=700&q=80"
+              alt="A bowl of Asian-style noodles with toppings"
+              loading="lazy">
+            <figcaption class="gallery-label">Noodle Time</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?auto=format&fit=crop&w=700&q=80"
+              alt="A close-up of a freshly prepared pasta dish"
+              loading="lazy">
+            <figcaption class="gallery-label">Full of Flavour</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+              alt="Grilled chicken pieces served as a possible meal extra"
+              loading="lazy">
+            <figcaption class="gallery-label">Chicken Extras</figcaption>
+          </figure>
+
+          <figure class="gallery-item">
+            <img
+              src="https://images.unsplash.com/photo-1623238913973-21e45cced554?auto=format&fit=crop&w=700&q=80"
+              alt="Golden fried plantain pieces as a possible side dish"
+              loading="lazy">
+            <figcaption class="gallery-label">Sides & Extras</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         CUSTOMER REVIEWS
+    ========================== -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Straight from customers</span>
+          <h2>The People <span>Have Spoken.</span></h2>
+          <p>
+            Real words from customers about their experience with Spagking.
+          </p>
+        </div>
+
+        <div class="review-summary">
+          <strong>4.5</strong>
+          <div>
+            <div class="stars" aria-label="4.5 out of 5 stars">★★★★★</div>
+            <small>Google rating · 70 reviews</small>
+          </div>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>
+              "You guys are the best. If I no eat Spaghetti King in a week I fit die walai."
+            </blockquote>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">E</div>
+              <div>
+                <strong>Emmanuel Micheal</strong>
+                <small>Customer review</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>
+              "They are very fast in terms of delivery. I did not have to wait for too long before I got it."
+            </blockquote>
+            <div class="review-author">
+              <div class="review-avatar" aria-hidden="true">S</div>
+              <div>
+                <strong>Stella Babatunde</strong>
+                <small>Customer review</small>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         ORDER AND CONTACT
+    ========================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Let's sort that craving</span>
+          <h2>Place Your <span>Order.</span></h2>
+          <p>
+            Fill in your details and we'll prepare a WhatsApp message for you.
+            Confirm menu availability, prices and delivery arrangements with
+            the restaurant.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <aside class="contact-info">
+            <h3>Come Through.<br><span>Or Message Us.</span></h3>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">📍</div>
+              <div>
+                <strong>Find Us</strong>
+                <p>Old Poly Quarters Junction, Lokoja 260101, Kogi State, Nigeria</p>
+                <p>Plus code: QPMH+GW Lokoja</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">☎</div>
+              <div>
+                <strong>Call or WhatsApp</strong>
+                <a href="tel:09027551946">0902 755 1946</a>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">◷</div>
+              <div>
+                <strong>Opening Hours</strong>
+                <p>Open daily, closes 8 pm</p>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon" aria-hidden="true">₦</div>
+              <div>
+                <strong>Price Range</strong>
+                <p>About ₦1 to ₦10,000 per person</p>
+              </div>
+            </div>
+
+            <div class="contact-social">
+              <a
+                class="btn btn-yellow"
+                href="https://wa.me/2349027551946"
+                target="_blank"
+                rel="noopener noreferrer">
+                WhatsApp Us ↗
+              </a>
+
+              <!-- Replace this placeholder with the restaurant's real Instagram URL -->
+              <a
+                class="btn btn-outline"
+                href="https://instagram.com/YOUR_INSTAGRAM_HERE"
+                target="_blank"
+                rel="noopener noreferrer">
+                Instagram ↗
+              </a>
+            </div>
+          </aside>
+
+          <form class="order-form" id="orderForm">
+            <h3>What's Your Order?</h3>
+            <p>
+              Enter your details below. Your WhatsApp app will open with your
+              message ready to send.
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="customerName">Your Name *</label>
+                <input
+                  type="text"
+                  id="customerName"
+                  name="customerName"
+                  placeholder="Enter your name"
+                  autocomplete="name"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="customerPhone">Phone Number *</label>
+                <input
+                  type="tel"
+                  id="customerPhone"
+                  name="customerPhone"
+                  placeholder="Your phone number"
+                  autocomplete="tel"
+                  required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="deliveryAddress">Delivery Address / Pickup *</label>
+              <input
+                type="text"
+                id="deliveryAddress"
+                name="deliveryAddress"
+                placeholder="Where should we deliver? Or write Takeaway"
+                autocomplete="street-address"
+                required>
+            </div>
+
+            <div class="form-group">
+              <label for="orderDetails">What Would You Like to Order? *</label>
+              <textarea
+                id="orderDetails"
+                name="orderDetails"
+                placeholder="Tell us what you'd like and any special requests..."
+                required></textarea>
+            </div>
+
+            <button class="btn btn-red" type="submit">
+              Send Order on WhatsApp <span aria-hidden="true">↗</span>
+            </button>
+
+            <p class="form-note">
+              This form opens WhatsApp; it does not charge you or submit an
+              order to a website server.
+            </p>
+          </form>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Map showing Old Poly Quarters Junction in Lokoja"
+            src="https://maps.google.com/maps?q=Old%20Poly%20Quarters%20Junction%2C%20Lokoja%2C%20Kogi%20State%2C%20Nigeria&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#home" class="brand" aria-label="Spagking Restaurant home">
+            <span class="brand-mark">SK</span>
+            <span class="brand-copy">
+              <strong>SPAGKING RESTAURANT</strong>
+              <small>Also known as Spag King</small>
+            </span>
+          </a>
+
+          <p>
+            Your spaghetti and noodle restaurant in Lokoja. Dine-in, takeaway
+            and delivery available.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#menu">Our Menu</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <a href="https://instagram.com/YOUR_INSTAGRAM_HERE" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="currentYear"></span> Spagking Restaurant. All rights reserved.</span>
+        <span>Old Poly Quarters Junction, Lokoja 260101, Kogi State, Nigeria</span>
+        <a href="tel:09027551946">0902 755 1946</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/2349027551946"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with Spagking Restaurant on WhatsApp">
+    <span aria-hidden="true">◉</span> WhatsApp Us
+  </a>
+
+  <script>
+    /* =========================
+       MOBILE NAVIGATION
+    ========================== */
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+
+    function closeNavigation() {
+      navLinks.classList.remove("open");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation menu");
+      menuToggle.textContent = "☰";
+    }
+
+    menuToggle.addEventListener("click", function () {
+      const isOpen = navLinks.classList.toggle("open");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu"
+      );
+      menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    navLinks.querySelectorAll("a").forEach(function (link) {
+      link.addEventListener("click", closeNavigation);
+    });
+
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeNavigation();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 760) {
+        closeNavigation();
+      }
+    });
+
+    /* =========================
+       MENU CATEGORY FILTERS
+    ========================== */
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const menuCards = document.querySelectorAll(".menu-card");
+
+    categoryButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        const selectedCategory = button.dataset.category;
+
+        categoryButtons.forEach(function (item) {
+          const isActive = item === button;
+          item.classList.toggle("active", isActive);
+          item.setAttribute("aria-pressed", String(isActive));
+        });
+
+        menuCards.forEach(function (card) {
+          const matches =
+            selectedCategory === "all" ||
+            card.dataset.category === selectedCategory;
+
+          card.hidden = !matches;
+        });
+      });
+    });
+
+    /* =========================
+       WHATSAPP ORDER FORM
+       No backend is required.
+       Form details are encoded into a WhatsApp message.
+    ========================== */
+    const orderForm = document.getElementById("orderForm");
+
+    orderForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!orderForm.reportValidity()) {
+        return;
+      }
+
+      const customerName =
+        document.getElementById("customerName").value.trim();
+
+      const customerPhone =
+        document.getElementById("customerPhone").value.trim();
+
+      const deliveryAddress =
+        document.getElementById("deliveryAddress").value.trim();
+
+      const orderDetails =
+        document.getElementById("orderDetails").value.trim();
+
+      const message = [
+        "Hello Spagking Restaurant!",
+        "",
+        "I'd like to make an order.",
+        "",
+        "Name: " + customerName,
+        "Phone: " + customerPhone,
+        "Delivery address / pickup: " + deliveryAddress,
+        "Order details: " + orderDetails,
+        "",
+        "Please confirm availability, price and delivery arrangements. Thank you!"
+      ].join("\n");
+
+      const whatsappURL =
+        "https://wa.me/2349027551946?text=" + encodeURIComponent(message);
+
+      const whatsappWindow = window.open(whatsappURL, "_blank");
+
+      if (whatsappWindow) {
+        whatsappWindow.opener = null;
+      } else {
+        window.location.href = whatsappURL;
+      }
+    });
+
+    /* =========================
+       AUTOMATIC FOOTER YEAR
+    ========================== */
+    document.getElementById("currentYear").textContent =
+      new Date().getFullYear();
+  </script>
+</body>
+</html>
